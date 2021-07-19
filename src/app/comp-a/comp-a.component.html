@@ -1,0 +1,9 @@
+<section>
+  <div>Comp A</div>
+  <button mat-button color="primary" (click)="sidenavService.open(tempRef)">Open</button>
+</section>
+
+<ng-template #tempRef>
+  <p>Hello, I am from <strong>routed component A</strong>; Currenlty I,m template but <strong>I will be a dynamic component</strong>.</p>
+  <button mat-button color="accent" (click)="sidenavService.close()">close</button>
+</ng-template>
